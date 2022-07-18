@@ -93,10 +93,6 @@
 
     </div>
     <div class="baguetteBoxTwo gallery">
-        <!-- <a href="img/2-2.jpg" data-at-450="img/thumbs/2-2.jpg" data-at-800="img/small/2-2.jpg" data-at-1366="img/medium/2-2.jpg" data-at-1920="img/big/2-2.jpg">
-            <img src="img/thumbs/2-2.jpg" alt="">
-        </a> -->
-
         <a href="img/2-1.jpg">
             <img src="img/thumbs/2-1.jpg" alt="">
         </a>
@@ -119,25 +115,6 @@
 window.onload = function() {
     baguetteBox.run('.baguetteBoxOne');
     baguetteBox.run('.baguetteBoxTwo');
-    baguetteBox.run('.baguetteBoxThree', {
-        animation: 'fadeIn',
-        noScrollbars: true
-    });
-    baguetteBox.run('.baguetteBoxFour', {
-        buttons: false
-    });
-    baguetteBox.run('.baguetteBoxFive', {
-        captions: function(element) {
-            return element.getElementsByTagName('img')[0].alt;
-        }
-    });
-
-    if (typeof oldIE === 'undefined' && Object.keys) {
-        hljs.initHighlighting();
-    }
-
-    var year = document.getElementById('year');
-    year.innerText = new Date().getFullYear();
 };
 </script>
 </body>
